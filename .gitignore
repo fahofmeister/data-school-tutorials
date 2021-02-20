@@ -1,6 +1,6 @@
- 
-# Created by https://www.toptal.com/developers/gitignore/api/linux,python,jupyternotebooks,git
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,python,jupyternotebooks,git
+
+# Created by https://www.toptal.com/developers/gitignore/api/linux,python,jupyternotebooks,git,vscode
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,python,jupyternotebooks,git,vscode
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -99,6 +99,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+pytestdebug.log
 
 # Translations
 *.mo
@@ -119,6 +120,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+doc/_build/
 
 # PyBuilder
 target/
@@ -155,6 +157,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+pythonenv*
 
 # Spyder project settings
 .spyderproject
@@ -177,4 +180,15 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,python,jupyternotebooks,git
+# profiling data
+.prof
+
+### vscode ###
+.vscode/*
+.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/linux,python,jupyternotebooks,git,vscode
